@@ -1,0 +1,35 @@
+.grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+
+    /* 4 колонки с адаптацией */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Пропорции 4:3 */
+.item {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: #555;
+    overflow: hidden;
+}
+
+.item .div {
+    width: 100%;
+    height: 100%;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* < 800px → список */
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
