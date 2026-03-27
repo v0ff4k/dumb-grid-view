@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовая задача</title>
+    <script src="//code.jquery.com/jquery-4.0.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="background: #333; color:#FFF; margin:0px;">
+    <div style="padding:40px;">
+
+        <h1>Тестовая задача</h1>
+
+        <div id="content">
+
+            <div style="margin:20px 0;">
+                <a href="test.zip" download="test.zip">
+                    <button style="background-color: #390; color:#fff; font-size:18px; padding:20px; border-radius:20px; border:none; cursor:pointer;">Скачать файлы задачи ZIP</button>
+                </a>
+            </div>
+
+            <br><br>
+
+            <h2>HTML + CSS</h2>
+            <br>
+            <p>Измените подключенный style.css так чтобы .grid находился в середине страницы, имел максимальную ширину 1400px</p>
+            <p>Все .item должны быть решёткой в 4 колонки, занимать всю ширину .grid, иметь пропорции 4x3 и <b>уменьшаться пропорционально</b> при сжатии страницы. Отступ между блоками - 20px</p>
+            <p>Минимальная ширина .item - 250px, при достижении этого предела количество колонок уменьшается, а .items снова занимают всю ширину.</p>
+            <p>Если ширина страницы становится менее 800px все .item должны стать списком.</p>
+
+            <br><br>
+
+            <h1>JS (JQuery) + PHP</h1>
+            <br>
+            <p>При нажатии "+ Добавить изображения" (#pushMe) должна сработать функция Get().</p>
+            <p>Нельзя чтобы я мог запустить Get() из консоли.</p>
+            <p>В файле script.js в функции Get() продемонстрируйте как отправить post запрос к файлу get.php c передачей произвольного массива так чтобы в get.php сработало условие получения данных.</p>
+            <p>В файле get.php покажите как правильно заполнить запрос к БД MySQL и вернуть данные в JSON формате.</p>
+            <p>Из полученного массива $json['imgs'] дополните изображениями элемент $("#content .grid").</p>
+
+            <br><br>
+
+            <div>
+                <div style="position: absolute; left:0px; top:0px; width:4px; height:100%; background-color: #c30;"></div>
+                <div style="position: absolute; right:0px; top:0px; width:4px; height:100%; background-color: #c30;"></div>
+                <div style="position: absolute; right:0px; top:50%; transform:translate(0, -50%); width:100%; height:4px; background-color: #c30;"></div>
+                <span class="win_size" style="position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); background-color: #333; color: #c30; text-align: center; font-weight: 700; margin: auto; padding:10px;">...</span>
+            </div>
+
+            <br><br>
+
+            <div class="grid">
+                <div class="item">
+                    <div class="div"></div>
+                </div>
+                <div class="item">
+                    <div class="div"></div>
+                </div>
+                <div class="item">
+                    <div class="div"></div>
+                </div>
+                <div class="item">
+                    <div class="div">
+                        <img src="//omycod.ru/page/test/img/1.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <input type="button" id="pushMe" onclick="Example()" value="+ Добавить изображения" style="padding: 12px 24px; font-size: 18px;">
+
+            <br><br>
+
+            <div class="example"></div>
+
+            <br><br><br><br>
+
+            <p>Пример - как должно получиться.</p>
+            <div>
+                <img src="//omycod.ru/page/test/img/example.gif" style="max-width: 600px; box-shadow: 0 0 0 3px #390;" alt="gif">
+            </div>
+
+            <br><br>
+
+            <p>Это всё.</p>
+
+            <br><br>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
